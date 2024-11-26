@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+header{
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	padding:1em 0;
+}
+
+footer{
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	padding:1em 0;
+	margin-top:1em;
+	border-top: 1px solid #333333;
+}
+
+h1{
+	font-size:2.1rem;
+	font-weight:bold;
+	line-height:125%;
+}
+
+#mainContent{
+	display:block;
+	overflow:hidden;
+	width:min(100%,800px);
+	margin:1em auto;
+}
+
+
+/***********************************
+for SP
+***********************************/
+@media screen and (max-width:768px){
+	
+
+}
+
+
+
+.formBox{
+	display:block;
+	overflow:hidden;
+	font-size:1.6rem;
+	line-height:125%;
+	text-align:center;
+	border:2px solid #c3c3c3;
+	border-radius:10px;
+	padding:1em;
+}
+
+.formBox + .formBox{
+	margin-top:1em;
+}
+
+.formBox dl{
+	display:block;
+	overflow:hidden;
+	text-align:left;
+	border-bottom:1px dotted #333333;
+	margin-bottom:1em;
+}
+
+.formBox dl > dt,
+.formBox dl > dd{
+	display:block;
+	overflow:hidden;
+	float:left;
+	padding-bottom:0.5em;
+}
+
+.formBox dl > dt{
+	clear:both;
+	padding:0.25em 0;
+	width:9em;
+}
+
+.formBox dl > dd{
+	width: calc(100% - 9em);
+}
+
+.formBox input[type="text"]{
+	width:50%;
+	padding:0.25em 0.5em;
+	border:1px solid #333333;
+	font-size:1.6rem;
+	line-height:125%;
+}
+
+
+.formBox input[name='brodcaster'],
+.formBox input[name='publisher'],
+.formBox input[name='msgTxt']{
+	width:100%;
+}
+
+.formBox *:disabled{
+	opacity: 0.5;
+}
+
+
+button{
+	padding:0.25em 1.5em;
+	font-size:1.6rem;
+	line-height:125%;
+	cursor:pointer;
+}
+
+
+
+/*SSE 接続ボタン*/
+#sseSwitch{
+	display:inline-block;
+	overflow:hidden;
+
+	border:1px solid #333333;
+	border-radius:3px;
+	vertical-align:middle;
+	position:relative;
+	cursor:pointer;
+}
+
+#sseSwitch span{
+	display:block;
+	overflow:hidden;
+	padding:0.3em 2em;
+
+	font-size:1.6rem;
+	line-height:125%;
+}
+
+#sseSwitch > input{
+	display:none;
+}
+input[name='connectBtn'] + span{
+	background-color:#cccccc;
+}
+input[name='connectBtn'] + span::after{
+	content:"Close";
+}
+
+input[name='connectBtn']:checked + span{
+	background-color:#ff6400;
+}
+input[name='connectBtn']:checked + span::after{
+	content:"Open";
+}
+
+input[name='connectBtn'] + span{
+	background-color:#cccccc;
+}
+
+
+/*--------------------------------
+for SP
+--------------------------------*/
+@media screen and (max-width:768px){
+	
+
+}
+
+/*ログフィールド*/
+#dialogFrame{
+	display:block;
+	overflow-y:auto;
+	width:100%;
+	height:35em;
+	background-color:#8cabd8;
+	position: relative;
+	margin-top:1em;
+}
+
+#dialogFrame + .formBox{
+	margin-top: -0.5em;
+}
+
+
+dl#dialogBody{
+	display:block;
+	overflow:hidden;
+	padding:0.5em 0.5em;
+	font-size:1.6rem;
+	line-height:155%;
+}
+
+dl#dialogBody p{
+	display:inline-block;
+	padding:0.5em 0.75em;
+	border-radius:5px;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+
+
+/*dl#dialogBody dt > p{
+	display:inline-block;
+	max-width:calc(100% - 150px);
+	padding:0.5em 0.75em;
+	border-radius:15px;
+	background-color:#ffffff;
+	text-align:left;
+}*/
+
+dl#dialogBody > dt{
+	/*text-align:right;*/
+	text-align:right;
+	padding-bottom:1em;
+}
+
+dl#dialogBody > dt > p{
+	background-color:#79e278;
+}
+
+/*dl#dialogBody> dd{
+	background:url("../images/haras.png") no-repeat 0 0.5em;
+	background-size:40px auto;
+	padding-left:45px;
+}*/
+
+dl#dialogBody dd > span{
+	display:block;
+	overflow:hidden;
+	font-size: 1.4rem;
+	line-height:125%;
+	margin-bottom:0.25em;
+}
+
+
+dl#dialogBody > dd + dt{
+	margin-top:1em;
+}
+
+
+/*--------------------------------
+for SP
+--------------------------------*/
+@media screen and (max-width:768px){
+	
+
+}

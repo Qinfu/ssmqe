@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+		
+	<title>SSMQE Chat Demo</title>
+
+	<link rel="stylesheet" type="text/css" media="all" href="../_htdocs/css/_reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="./css/chat.css" />
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../src/js/cSSMQE.js"></script>
+	<script type="text/javascript" src="../_htdocs/libs/_util.js"></script>
+	<script type="text/javascript" src="./libs/chat.js"></script>
+</head>
+	
+<body>
+	<div id="wrapper">
+		
+		<header id="header">
+			<h1>SSMQE Chat Demo</h1>
+		</header>
+				
+		<div id="mainContent">
+			<div class="formBox">
+				<dl>
+					<dt>Brodcast Server:</dt>
+					<dd><input type="text" name="brodcaster" value=""></dd>
+					<dt>Publish Server:</dt>
+					<dd><input type="text" name="publisher" value=""></dd>
+					<dt>Data ID:</dt>
+					<dd><input type="text" name="dataId" value="" placeholder="Data id" required></dd>
+					<dt>User id:</dt>
+					<dd><input type="text" name="usrId" value="" disabled></dd>
+				</dl>
+				<label id="sseSwitch"><input type="checkbox" name="connectBtn"><span>SSE Connection: </span></label>
+			</div>
+
+			<div id="dialogFrame">
+				<dl id="dialogBody">
+					<!--<dt><p>あああああああああああ</p></dt>
+					<dd>
+						<span>うううううう</span>
+						<p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
+					</dd>-->
+				</dl>
+			</div>
+			<div class="formBox">
+				<dl>
+					<dt>Name:</dt>
+					<dd><input type="text" name="userName" value="Mr.ABC" placeholder="User Name" required></dd>
+					<dt>Message:</dt>
+					<dd><input type="text" name="msgTxt" value=""></dd>
+				</dl>
+				<button name="pubBtn" disabled><span>Publish</span></button>
+				<button name="clearBtn"><span>Clear</span></button>
+			</div>
+		</div>
+				
+		<footer id="footer">
+			<address>Copyright(c) 2015 Plane-plan Inc. All Rights Reserved.</address>
+		</footer>
+	</div>
+</body>
+</html>
+
+<!--https://urawa.plane-plan.com/curiation/sse_test/mmqqtt.php-->

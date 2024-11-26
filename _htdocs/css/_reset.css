@@ -1,0 +1,153 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+/* ==========================================================
+Name:
+    reset.css
+
+Description:
+    ユーザーエージェントスタイルの初期化を行う
+
+Contents:
+    reset style
+========================================================== */
+/* ---------------------------------------------
+*   reset style
+--------------------------------------------- */
+/* line 17, src/_sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    /*font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;*/
+    font-size: 100%;
+}
+
+/* line 37, src/_sass/reset.scss */
+html {
+    line-height: 1;
+}
+
+/* line 40, src/_sass/reset.scss */
+ol, ul {
+    list-style: none;
+}
+
+/* line 43, src/_sass/reset.scss */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* line 47, src/_sass/reset.scss */
+caption, th, td {
+    vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* line 52, src/_sass/reset.scss */
+q, blockquote {
+    quotes: none;
+}
+
+/* line 55, src/_sass/reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+    clear: both;
+    content: "";
+    content: none;
+}
+
+/* line 60, src/_sass/reset.scss */
+a img {
+    border: none;
+}
+
+/* line 63, src/_sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+
+/* ==========================================================
+*
+* Basic Setting
+*
+========================================================== */
+
+html,
+body {
+    width: 100%;
+    /*height:100%;*/
+    min-height:100%;
+}
+
+html {
+    font-size: 62.5%;/* 16px x 0.625 = 10px(=1rem) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "palt";
+}
+
+body {
+    /*font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;*/
+    font-size: 1.6rem;
+    line-height:155%;
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight:400;
+}
+
+
+@supports (-webkit-touch-callout: none) {
+
+    html,
+    body {
+        height:100%;
+        min-height:100%;
+    }
+
+    body{
+        min-width:auto;
+        /* Safari用のハック */
+        height: -webkit-fill-available;
+    }
+
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+b{
+    font-weight:700;
+}
