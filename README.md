@@ -3,7 +3,7 @@
 
 ## Features
 
-SSE(Server-Sent Events) を使ってMQTTブローカーっぽい事を実現。
+SSE(Server-Sent Events) を使ってMQTTブローカーっぽい事を実現。  
 phpが動けばOKなので、普通のレンタルサーバ上でもリアルタイム通信が可能。
 
 ## Usage
@@ -24,3 +24,6 @@ D. js/cSSMQE.js
 A、B、Cはサーバに設置  
 Cには書き込み権限を付与する（777）
 
+# Usage
+
+基本的な使い方は「demo」を参照。　
