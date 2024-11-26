@@ -3,7 +3,7 @@
 
 ## Features
 
-SSE(Server-Sent Events) を使ってMQTTブローカーっぽい事を実現。  
+SSE(Server-Sent Events) を利用しててMQTTブローカーっぽい事を実現。  
 phpが動けばOKなので、普通のレンタルサーバ上でもリアルタイム通信が可能。
 
 ## Usage
