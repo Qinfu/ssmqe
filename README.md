@@ -8,13 +8,13 @@ phpが動けばOKなので、普通のレンタルサーバ上でもリアルタ
 
 ## Usage
 
-A. sse/ssmqe_broadcaster.php  
+A. src/ssmqe_broadcaster.php  
 情報配信用プログラム  
   
-B. sse/ssmqe_publisher.php  
+B. src/ssmqe_publisher.php  
 情報送信用プログラム  
   
-C. sse/outbox/  
+C. src/outbox/  
 配信情報一時保存ディレクトリ  
   
 D. js/cSSMQE.js  
